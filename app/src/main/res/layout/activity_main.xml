@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="36dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_result"
+        android:textSize="30sp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/question_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cultured"
+            android:text="Question"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="Answer 1"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Answer 2"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Answer 3"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Answer 4"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
